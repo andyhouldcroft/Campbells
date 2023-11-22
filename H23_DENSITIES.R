@@ -1,13 +1,9 @@
 ################################################################################
-# 
 # Article:  Using inlabru to predict and map wildlife densities in heterogenous 
 #           landscapes
-# 
 # Contact:  Andrew Houldcroft
 #           ah1101@exeter.ac.uk
-#
 # Notes:    Please replace "..." with your own values.
-#
 ################################################################################
 library(INLA)
 library(INLAspacetime)
