@@ -63,10 +63,10 @@ grid <- rast(st_as_sf(data.frame(mesh$loc[,1:2]),
                       crs = crs.km),
              resolution = c(0.025, 0.025))
 
-# Example 1: Proximity to vector.data in kilometers
+# Example 1: Proximity to vector in kilometers
 covariate.1 <- distance(grid, vect(vector), unit = "km")
 
-# Example 2: Mean of raster.data per 500-m buffer
+# Example 2: Mean of raster per 500-m buffer
 buffer <- focalMat(raster, 0.5, type = "circle")
 covariate.2 <- focal(raster, w = buffer, fun = "mean", na.rm = TRUE)
 covariate.2 <- resample(covariate.2, grid, method = "average")
