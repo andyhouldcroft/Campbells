@@ -9,7 +9,6 @@ library(INLA)
 library(fmesher)
 library(sf)
 library(terra)
-library(readxl)
 
 # Set INLA mode
 bru_options_set(inla.mode = "experimental")
@@ -18,7 +17,7 @@ bru_options_set(inla.mode = "experimental")
 crs.km <- "..."
 
 # Import detection locations, distances and cluster sizes
-points <- read_excel("~/...", sheet = "...")
+points <- read.csv("...", header = TRUE)
 points <- st_as_sf(points, coords = c("longitude", "latitude"), crs = 4326)
 points <- st_transform(points, crs.km)
 
