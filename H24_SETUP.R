@@ -46,9 +46,9 @@ raster <- rast("~/...")
 raster <- project(raster, crs.km)
 
 # Define triangulation mesh
-mesh <- inla.mesh.2d(boundary = hull,
-                     max.edge = c("...", "..."),
-                     crs = crs.km)
+mesh <- fm_mesh_2d(boundary = hull,
+                   max.edge = c("...", "..."),
+                   crs = crs.km)
 
 # Define barrier triangles
 barrier <- unlist(fm_contains(
