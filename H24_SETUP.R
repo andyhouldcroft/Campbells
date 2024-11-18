@@ -6,6 +6,7 @@
 # Notes:    Please replace "..." with your own values.
 ################################################################################
 library(INLA)
+library(inlabru)
 library(fmesher)
 library(sf)
 library(terra)
