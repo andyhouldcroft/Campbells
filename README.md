@@ -1,6 +1,6 @@
 # Campbells
 
-This repository contains code to perform the wildlife density modelling approach outlined in Houldcroft et al. (2024), with the associated survey data available from the Dryad Digital Repository: https://doi.org/10.5061/dryad.xd2547dqx
+This repository contains code to perform the wildlife density modelling approach outlined in <a href="https://doi.org/10.1111/ecog.07399">Houldcroft et al. (2024)</a>, with the associated survey data available from the Dryad Digital Repository: https://doi.org/10.5061/dryad.xd2547dqx
 
 [H24_SETUP.R](H24_SETUP.R) contains the code to produce spatial covariates, a barrier SPDE mesh and format all data as sf and terra objects compatible with inlabru.
 
