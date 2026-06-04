@@ -2,9 +2,9 @@
 
 This repository contains code to perform the wildlife density modelling approach outlined in <a href="https://doi.org/10.1111/ecog.07399">Houldcroft et al. (2024)</a>, with the associated survey data available from the Dryad Digital Repository: https://doi.org/10.5061/dryad.xd2547dqx
 
-[H24_SETUP.R](H24_SETUP.R) contains the code to produce spatial covariates, a barrier SPDE mesh and format all data as sf and terra objects compatible with inlabru.
+[`H24_SETUP.R`](H24_SETUP.R) contains the code to produce spatial covariates, a barrier SPDE mesh and format all data as sf and terra objects compatible with inlabru.
 
-[H24_DENSITIES.R](H24_DENSITIES.R) contains the code to run the point process model with a spatial cluster size distribution, cluster size detection function and barrier SPDE models.
+[`H24_DENSITIES.R`](H24_DENSITIES.R) contains the code to run the point process model with a spatial cluster size distribution, cluster size detection function and barrier SPDE models.
 
 Please ensure that the demonstrated hazard-rate detection function and discretised truncated log-Normal cluster size distribution are appropriate for your specific data and research circumstances. In the event of model convergence issues, consider including additional priors on the precision and mean of model parameters. 
 
