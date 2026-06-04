@@ -2,7 +2,7 @@
 # Article:  Joint spatial modeling of cluster size and density for a heavily
 #           hunted primate persisting in a heterogeneous landscape
 # Contact:  Andrew Houldcroft
-#           ah1101@exeter.ac.uk
+#           A.Houldcroft@exeter.ac.uk
 # Notes:    Please replace "..." with your own values.
 ################################################################################
 library(INLA)
